@@ -1,0 +1,101 @@
+
+h2{
+    color: #333333;
+}
+/* carousel section start here */
+.auction-product{
+    width: 228px;
+    height: 186px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.25);
+}
+.first-cont h2{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 157%;
+    color: #333333;
+     
+}
+.card-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: #FFFFFF;
+    width:  202px;
+    height: 43.06px;
+    border-radius: 8px;
+    background: rgba(245, 244, 244, 0.24);
+    border: 0.5px solid #FFFFFF;
+    backdrop-filter: blur(1.5px);
+}
+.carousel-container{
+    height: 250px;
+}
+/* carousel section ends here */
+.top-bid{
+    width: 100%;
+    height: auto;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    
+    }
+   .card-img-cont   {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around   ;
+        align-items: center;
+        width: 100%;
+        height: 256px;
+        background-color: #fff;
+        box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+    }
+    .card-img-cont .name-price, .card-img-cont .red-heart {
+        width: 300px;
+    }
+    .top-bid-img{
+        width: 300px;
+        height: 184px;
+        background-color: #D9D9D9;
+        border-radius: 8px;
+    }
+    .heart-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        width: 28px; 
+        height: 28px;  
+        padding: 2px; 
+        border: 1px solid rgb(27, 27, 27);
+        border-radius: 50%;
+        font-size: 20px;
+        color: #F44336;
+    }
+    .card-footer{
+        background: #F7F4F4;
+        border-radius: 10px;
+    }
+    .card-footer button{
+        height: 50px;
+        padding: 12.1021px 44.2485px;
+        gap: 3.78px;
+        background-color: #3341C1;
+        color: #fff;
+        border-radius: 2.33932px;
+        margin-top: 10px;
+    }
+
+
+    .read-more-arrow{
+        border: 1px solid #333333;
+        border-radius: 50%;
+        font-size: 40px;
+        cursor: pointer;
+    }
