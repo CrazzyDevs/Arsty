@@ -1,0 +1,68 @@
+.live-heading{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 157%;
+}
+.eye-cont{
+    width: 60px;
+    height: 27px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    color: #fff;
+}
+.ilve-indicat{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 157%;
+    width: 49px;
+    height: 27px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #006CA2;
+}
+.input-group{
+    
+}
+.input-set{
+    width: 270px;
+    height: 35px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+}
+.input-set input{
+    width: 90%;
+    height: 30px;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: medium;
+    background-color: transparent;
+    color: #fff;
+}
+.input-set input::placeholder{
+color: #fff;
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 157.6%;        
+}
+.likes-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    width: 29px;
+    color: #E31616;
+    height: 29px;
+    background: rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+}
+ .comment-stack:nth-child(-3){
+    filter: opacity(0.20);
+}

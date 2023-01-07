@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{} from 'react'
 import '../../Components/styles/Auction.css'
 
 import { BsHeartFill } from 'react-icons/bs'
@@ -8,6 +8,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 const Auction = () => {
+
 
   const responsive = {
     superLargeDesktop: {
