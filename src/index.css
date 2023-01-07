@@ -7,6 +7,11 @@
         font-family: 'Satoshi', sans-serif;
   }
 }
+.active {
+  text-decoration: underline;
+  font-weight:bold;
+}
+
 
 /* font-family: 'Switzer', sans-serif;
 font-family: 'Clash Display', sans-serif; 
