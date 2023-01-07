@@ -1,8 +1,8 @@
 import React from 'react'
 import live from './live.png'
 
-import { AiFillEye } from 'react-icons'
-import { FiX } from 'react-icons'
+import { AiFillEye } from 'react-icons/ai'
+import { FiX } from 'react-icons/fi'
 
 const LiveStream = () => {
   return (
@@ -13,17 +13,18 @@ const LiveStream = () => {
   backgroundSize: 'cover'
 }}  className='w-full h-screen'>
     <div>
-{/* <header> 
+<header> 
     <p>Tag: Lost or Wither</p>
-    <div>
+    <div className='hidden'>
          <div>LIVE</div>
             <div><span><AiFillEye /></span>1.8k</div>
             <div><FiX /></div>
     </div>
-</header> */}
+</header>
     </div>
 </div>
 
+<h1>76oto76tfy6fyu</h1>
     </>
   )
 }
