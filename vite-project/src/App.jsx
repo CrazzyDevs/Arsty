@@ -2,9 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
 import MarketPlace from './pages/MarketPlace';
-import Auction from './pages/Auction';
+import Auction from './pages/auction/Auction';
 import Drop from './pages/Drop';
 import Layout from './Components/Layout';
+import Error from './pages/Error';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="marketplace" element={ <MarketPlace/> } />
             <Route path="auction" element={ <Auction/> } />
             <Route path="drop" element={ <Drop/> } />
+            <Route path="*" element={ <Error/> } />
           </Route>
         </Routes>
       </Router>
