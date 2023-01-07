@@ -1,7 +1,14 @@
 import React from "react";
+import LiveStream from "./auction/LiveStream";
 
 const Drop = () => {
-  return <div>Drop</div>;
+  
+  return (
+  <>
+  vyhvhyv
+  <LiveStream />
+  </>
+    );
 };
 
 export default Drop;
