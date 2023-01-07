@@ -8,6 +8,7 @@ module.exports = {
         fontFamily: {
       'switzer': ['switzer', 'sans-serif'],
       'serif': ['clash display', 'sans-serif'],
+      'sentient': ['sentient', 'serif']
     },
 
     extend: {},

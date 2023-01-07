@@ -10,7 +10,7 @@ import Error from './pages/Error';
 function App() {
 
   return (
-    <> 
+    <div> 
       <Router>
         <Routes>
           <Route path='/' element={<Layout/>}>
@@ -22,7 +22,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
-    </>
+    </div>
   )
 }
 
