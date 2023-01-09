@@ -1,5 +1,6 @@
-import React,{} from 'react'
+import React from 'react'
 import '../../Components/styles/Auction.css'
+import { Link } from 'react-router-dom'
 
 import { BsHeartFill } from 'react-icons/bs'
 import { IoIosArrowRoundForward } from 'react-icons/io'
@@ -9,6 +10,9 @@ import 'react-multi-carousel/lib/styles.css';
 
 const Auction = () => {
 
+
+
+ 
 
   const responsive = {
     superLargeDesktop: {
@@ -58,6 +62,14 @@ const auctionProduct = [
 },
 ]
 
+// const id = auctionProduct.filter(open => open.id === 2);
+
+// const handlClick = () =>{
+//   console.log(id);
+//   }
+
+
+
 const bidCard = [
   {
     id: 1,
@@ -105,7 +117,11 @@ const bidCard = [
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover'
 }} className=' auction-product'>
-  <div className='card-text'><p>{prodcuCard.title}</p></div>
+
+  <Link to={`/auction/${prodcuCard.id}`}>
+  <div className='card-text' ><p>{prodcuCard.title}</p></div>
+  </Link>
+
 </div>
   ))}
  

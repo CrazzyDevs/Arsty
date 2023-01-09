@@ -7,26 +7,30 @@ import { FiX } from 'react-icons/fi'
 import { RiSendPlaneFill } from 'react-icons/ri'
 
 import comment from './comment.png'
+import { Link, useParams } from 'react-router-dom'
 
 const LiveStream = () => {
+
+const { id } = useParams()
+
   return (
     <>
 <div style={{
   backgroundImage: `url(${live})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover'
-}}  className='w-full h-screen'>
+}}  className='w-full h-screen absolute top-0  left-0'>
     <div>
 <header className='flex justify-between pt-8 pl-3 pr-4 relative'> 
     <p className='live-heading text-white'>Tag: Lost or Wither</p>
     <div className='flex justify-around items-center w-40 '>
          <div className='ilve-indicat flex justify-center items-center cursor-pointer'>LIVE</div>
             <div className='flex justify-between items-center w-14 eye-cont cursor-pointer px-1.5 '><span ><AiFillEye /></span><p>1.8k </p></div>
-            <div className='text-2xl text-white cursor-pointer'><FiX /></div>
+            <div className='text-2xl text-white cursor-pointer'><Link to='/auction'><FiX /></Link></div>
     </div>
 </header>
 {/* foter start */}
-<footer className=' absolute bottom-0 w-full'>
+<footer className=' absolute bottom-2 w-full'>
     {/* comment section */}
         <div className='text-white comment-stack  pb-3 pl-5 '>
 
