@@ -8,12 +8,15 @@ import Layout from './Components/Layout';
 import Error from './pages/Error';
 import LiveStream from './pages/auction/LiveStream';
 
+import {AnimatePresence} from 'framer-motion'
+
 function App() {
 
   return (
-    <div> 
-      <Router>
-        <Routes>
+ 
+      <AnimatePresence>
+      <Router >
+        <Routes >
           <Route path='/' element={<Layout/>}>
             <Route index element={<Home/>} />
             <Route path="marketplace" element={ <MarketPlace/> } />
@@ -25,7 +28,8 @@ function App() {
           </Route>
         </Routes>
       </Router>
-    </div>
+      </AnimatePresence>
+
   )
 }
 
