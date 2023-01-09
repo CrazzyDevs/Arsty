@@ -18,7 +18,6 @@ function App() {
             <Route path="marketplace" element={ <MarketPlace/> } />
             <Route path="auction" element={ <Auction/> } />
             <Route path="auction/:id" element={ <LiveStream/> } />
-           
             <Route path="drop" element={ <Drop/> } />
             <Route path="*" element={ <Error/> } />
           </Route>
