@@ -7,7 +7,7 @@ module.exports = {
   theme: {
         fontFamily: {
       'switzer': ['switzer', 'sans-serif'],
-      'serif': ['clash display', 'sans-serif'],
+      'clash': ['clash display', 'sans-serif'],
       'sentient': ['sentient', 'serif']
     },
 

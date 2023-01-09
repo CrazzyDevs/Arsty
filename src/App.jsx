@@ -6,6 +6,7 @@ import Auction from './pages/Auction/Auction';
 import Drop from './pages/Drop/Drop';
 import Layout from './Components/Layout';
 import Error from './pages/Error';
+import LiveStream from './pages/auction/LiveStream';
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
             <Route index element={<Home/>} />
             <Route path="marketplace" element={ <MarketPlace/> } />
             <Route path="auction" element={ <Auction/> } />
+            <Route path="auction/:id" element={ <LiveStream/> } />
+           
             <Route path="drop" element={ <Drop/> } />
             <Route path="*" element={ <Error/> } />
           </Route>

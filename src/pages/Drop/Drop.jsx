@@ -5,9 +5,9 @@ const Drop = () => {
 
   return (
   <>
-  
-  <LiveStream />
+   {/* <LiveStream /> */}
   </>
+ 
     );
 };
 

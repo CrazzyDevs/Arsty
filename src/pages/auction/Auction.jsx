@@ -1,5 +1,7 @@
-import React,{} from 'react'
+import React from 'react'
 import '../../Components/styles/Auction.css'
+import { Link } from 'react-router-dom'
+import { auctionProduct } from './AuctionData'
 
 import { BsHeartFill } from 'react-icons/bs'
 import { IoIosArrowRoundForward } from 'react-icons/io'
@@ -9,6 +11,9 @@ import 'react-multi-carousel/lib/styles.css';
 
 const Auction = () => {
 
+
+
+ 
 
   const responsive = {
     superLargeDesktop: {
@@ -30,33 +35,14 @@ const Auction = () => {
       partialVisibilityGutter: 110 
     }
   };
-const auctionProduct = [
-{
-  id: 1,
-  imageUrl: 'https://res.cloudinary.com/dpokiomqq/image/upload/v1673043075/image1_h3mp1a.png',
-  title: 'new product',
-},
-{
-  id: 2,
-  imageUrl: ' https://res.cloudinary.com/dpokiomqq/image/upload/v1673043064/image2_a1gpiy.png',
-  title: 'new product',
-},
-{
-  id: 3,
-  imageUrl: 'https://res.cloudinary.com/dpokiomqq/image/upload/v1673043075/image1_h3mp1a.png',
-  title: 'new product',
-},
-{
-  id: 4,
-  imageUrl: 'https://res.cloudinary.com/dpokiomqq/image/upload/v1673043046/image4_zpxnh3.png',
-  title: 'new product',
-},
-{
-  id: 5,
-  imageUrl: 'https://res.cloudinary.com/dpokiomqq/image/upload/v1673043052/image6_b3fwbf.png',
-  title: 'new product',
-},
-]
+
+// const id = auctionProduct.filter(open => open.id === 2);
+
+// const handlClick = () =>{
+//   console.log(id);
+//   }
+
+
 
 const bidCard = [
   {
@@ -105,7 +91,11 @@ const bidCard = [
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover'
 }} className=' auction-product'>
-  <div className='card-text'><p>{prodcuCard.title}</p></div>
+
+  <Link to={`/auction/${prodcuCard.id}`}>
+  <div className='card-text' ><p>{prodcuCard.title}</p></div>
+  </Link>
+
 </div>
   ))}
  

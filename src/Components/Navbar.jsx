@@ -61,7 +61,7 @@ const Navbar = () => {
       {/* Mobile nav */}
       <ul
         className={
-          !nav ? "hidden" : "absolute w-full px-8 h-[736px] bg-[#fff] top-0"
+          !nav ? "hidden" : "absolute w-full px-8 h-[736px] bg-[#fff] top-0 z-10"
         }
       >
         {/* Menubar*/}
