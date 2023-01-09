@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home'
-import MarketPlace from './pages/MarketPlace';
-import Auction from './pages/auction/Auction';
-import Drop from './pages/Drop';
+import Home from './pages/HomePage/Home'
+import MarketPlace from './pages/MarketPlace/MarketPlace';
+import Auction from './pages/Auction/Auction';
+import Drop from './pages/Drop/Drop';
 import Layout from './Components/Layout';
 import Error from './pages/Error';
 

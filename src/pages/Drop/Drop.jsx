@@ -1,5 +1,5 @@
 import React from "react";
-import LiveStream from "./auction/LiveStream";
+import LiveStream from "../Auction/LiveStream";
 
 const Drop = () => {
 

@@ -7,7 +7,6 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
   const handleClose = () => setNav(!nav);
 
-
   return (
     <div className="w-[100%] h-[80px] z-10 lg:mt-[52px]">
       <div className="md:px-8 flex place-items-center justify-between items-center mt-[20px]">
@@ -47,7 +46,9 @@ const Navbar = () => {
             <FiSearch className="cursor-pointer lg:w-[28px] lg:h-[28px] w-[16px]" />
           </li>
           <li>
-            <FiShoppingCart className="cursor-pointer lg:w-[28px] lg:h-[28px] w-[17px]" />
+            <NavLink to="/marketplace">
+              <FiShoppingCart className="cursor-pointer lg:w-[28px] lg:h-[28px] w-[17px]" />
+            </NavLink>
           </li>
           <li className="hidden md:flex">
             <NavLink to="/drop">
