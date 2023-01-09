@@ -1,17 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-        fontFamily: {
-      'switzer': ['switzer', 'sans-serif'],
-      'serif': ['clash display', 'sans-serif'],
-      'sentient': ['sentient', 'serif']
+    colors: {
+      black: "#292929",
+      grey: "#999999",
     },
-
+    fontFamily: {
+      switzer: ["switzer", "sans-serif"],
+      serif: ["clash display", "sans-serif"],
+      sentient: ["sentient", "serif"],
+    },
     extend: {},
   },
   plugins: [],
-}
+};
