@@ -2,6 +2,7 @@ import React from 'react'
 import '../../Components/styles/Auction.css'
 import { Link } from 'react-router-dom'
 import { auctionProduct } from './AuctionData'
+import {motion} from 'framer-motion'
 
 import { BsHeartFill } from 'react-icons/bs'
 import { IoIosArrowRoundForward } from 'react-icons/io'
@@ -78,7 +79,11 @@ const bidCard = [
 ]
   return (
     <>
-<div className='pl-2'>
+<motion.div
+initial={{x: 100, opacity: 0}}
+animate={{x: 1, opacity: 1}}
+exit={{x: -100, opacity: 0}}
+className='pl-2'>
  
  {/* carousel div start here */}
 <div className=' break-words font-[switzer] first-cont'>
@@ -160,7 +165,7 @@ const bidCard = [
   </div>
 </div>
         </div>
-</div>
+</motion.div>
     </>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import live from './live.png'
 import '../../Components/styles/Live.css'
+import {motion} from 'framer-motion'
 
 import { AiFillEye, AiFillHeart } from 'react-icons/ai'
 import { FiX } from 'react-icons/fi'
@@ -15,11 +16,16 @@ const { id } = useParams()
 
   return (
     <>
-<div style={{
+<motion.div style={{
   backgroundImage: `url(${live})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover'
-}}  className='w-full h-screen absolute top-0  left-0'>
+}} 
+ className='w-full h-screen absolute top-0  left-0'
+ initial={{x: -100, opacity: 0}}
+animate={{x: 1, opacity: 1}}
+exit={{x: 110, opacity: 0}}
+ >
     <div>
 <header className='flex justify-between pt-8 pl-3 pr-4 relative'> 
     <p className='live-heading text-white'>Tag: Lost or Wither</p>
@@ -76,7 +82,7 @@ const { id } = useParams()
 </footer>
 {/* footer ends */}
     </div>
-</div>
+</motion.div>
 
     </>
   )
