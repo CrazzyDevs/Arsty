@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import MarketPlace from "./pages/marketPlace/MarketPlace"
 import Auction from './pages/auction/Auction';
-import Drop from './pages/Drop';
+import Drop from './pages/drop/Drop';
 import Layout from './Components/Layout';
 import Error from './pages/Error';
 import LiveStream from './pages/auction/LiveStream';
