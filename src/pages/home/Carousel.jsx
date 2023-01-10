@@ -1,5 +1,5 @@
 import React from "react";
-import { auctionProduct } from "../Auction/AuctionData";
+import { auctionProduct } from "../../pages/auction/AuctionData";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
