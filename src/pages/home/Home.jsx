@@ -1,6 +1,6 @@
 import React from "react";
 import Carosuel from "./Carousel";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="px-2">
@@ -22,10 +22,10 @@ const Home = () => {
       <div className="mt-[112px] text-[#292929] text-[28px] font-[700] leading-[43.88px]">
         <h3>Featured products</h3>
 
-                                      {/* Cards  */}
-        
+        {/* Cards  */}
+
         {/* card 1 */}
-        <hr className="text-[#333333] mt-[37px] lg:w-[1200.06px] hidden lg:block md:hidden" />
+        <hr className="text-[#333333] mt-[37px] max-w-full hidden lg:block md:block" />
         <div className="grid lg:grid-cols-2">
           {/* card content */}
           <div className="lg:mt-[60px] md:mt-[30px]">
@@ -73,7 +73,7 @@ const Home = () => {
               urna, porttitor rhoncus dolor pur
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 lg:mx-[37px] mt-[28px] place-items-center justify-center text-center gap-5">
-              <div className="flex">
+              <div className="flex relative">
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673084428/Rectangle_82_cc3kxf.png"
                   alt="picture"
@@ -108,14 +108,14 @@ const Home = () => {
                 />
               </div>
             </div>
+            <hr className="text-[#333333] mt-[17px] w-[294px] md:hidden lg:hidden block" />
           </div>
           {/* end of under content card */}
         </div>
 
         {/* Card 2 */}
-        <hr className="text-[#333333] mt-[37px] lg:w-[1200.06px] hidden lg:block md:hidden" />
+        <hr className="text-[#333333] mt-[37px] max-w-full hidden lg:block md:block" />
         <div className="grid lg:grid-cols-2">
-          
           {/* untop in large screen content card */}
           <div className="lg:mt-[61px] mt-[18px] hidden lg:block md:block">
             <h3 className="hidden lg:block md:block font-[700] font-[switzer] text-[40px] leading-[50px] text-[#333333]">
@@ -246,13 +246,13 @@ const Home = () => {
                 />
               </div>
             </div>
+            <hr className="text-[#333333] mt-[17px] w-[294px] md:hidden lg:hidden block" />
           </div>
           {/* end of under content card */}
-       
         </div>
 
-         {/* card 3 */}
-        <hr className="text-[#333333] mt-[37px] lg:w-[1200.06px] hidden lg:block md:hidden" />
+        {/* card 3 */}
+        <hr className="text-[#333333] mt-[37px] max-w-full hidden lg:block md:block" />
         <div className="grid lg:grid-cols-2">
           {/* card content */}
           <div className="lg:mt-[60px] md:mt-[30px]">
@@ -260,7 +260,7 @@ const Home = () => {
             <div className="mt-[30px] lg:hidden md:hidden block">
               <div className="flex justify-center items-center place-items-center mt-[50px]">
                 <h3 className=" mt-[35%] text-center text-[#FFFFFF] text-[30px] leading-[36.9px] font-[clash] absolute">
-                  Boolean Egyptian
+                  Oloibiri 1997
                 </h3>
               </div>
 
@@ -335,9 +335,101 @@ const Home = () => {
                 />
               </div>
             </div>
+            <hr className="text-[#333333] mt-[17px] w-[159px] md:hidden lg:hidden block" />
           </div>
           {/* end of under content card */}
         </div>
+      </div>
+
+      {/* <div className="lg:mt-[200px] mt-[100px] relative">
+        <div className="absolute">
+           <img src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673334848/Rectangle_90_ocxe6k.png" alt="bg" className="h-[336px]"/>
+        </div>
+         <div className="place-items-center justify-center flex items-center absolute">
+          <img src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673044148/monalisa_rizbkl.png" alt="img bg" className=" w-[347px] h-[269px] object-cover mx-[33px] mt-[34px]"/>
+        </div>
+      </div> */}
+
+      <div className="mt-[100px]">
+        <hr className="text-[#292929] mt-[37px] max-w-full" />
+        <div className="flex justify-between lg:mt-[59px] md:mt-[40px] mt-[24px]">
+          <h1 className="font-[500] text-[20px] leading-[32.4px] lg:leading-[64.8px] lg:text-[48px] md:text-[30px] w-full lg:mx-[79px]">
+            Explore marketplace
+          </h1>
+          <div className="text-[#292929] lg:hidden md:hidden block">
+            <Link to="marketplace">
+              <img
+                src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673348986/Group_518_q72wzw.png"
+                alt="arrow"
+                className=" cursor-pointer w-[53px] h-[53px] mr-[55px] hover:opacity-75"
+              />
+            </Link>
+          </div>
+          <div className="hidden lg:block md:block lg:mt-[15px] lg:mr-[293px]">
+            <Link to="marketplace">
+              <img
+                src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673336972/Vector_1_kh86lc.png"
+                alt="lg arrow"
+                className="lg:w-[81px] md:w-[50px] hover:opacity-75"
+              />
+            </Link>
+          </div>
+        </div>
+
+        <hr className="text-[#292929] mt-[37px] max-w-full" />
+        <div className="flex justify-between lg:mt-[59px] md:mt-[40px] mt-[24px]">
+          <h1 className="font-[500] text-[24px] w-[221px] h-[32px] leading-[32.4px] lg:mx-[79px] lg:text-[48px] md:text-[30px] lg:leading-[64.8px] lg:w-full ">
+            See auctions
+          </h1>
+          <div className="text-[#292929] lg:hidden md:hidden block">
+            <Link to="auction">
+              <img
+                src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673348986/Group_518_q72wzw.png"
+                alt="arrow"
+                className="cursor-pointer  w-[53px] h-[53px] mr-[35px] hover:opacity-75"
+              />
+            </Link>
+          </div>
+
+          <div className="hidden lg:block md:block lg:mt-[15px] lg:mr-[293px]">
+            <Link to="auction">
+              <img
+                src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673336972/Vector_1_kh86lc.png"
+                alt="lg arrow"
+                className="w-[81px] md:w-[50px] hover:opacity-75"
+              />
+            </Link>
+          </div>
+        </div>
+        <hr className="text-[#292929] mt-[37px] max-w-full" />
+      </div>
+
+      {/* Newsletter */}
+      <div className="lg:border md:border rounded-[#333333] lg:w-full lg:h-[320px] md:h-[300px] mt-[100px]">
+        <h3 className="font-[400] lg:text-[30.21px] text-[24px] lg:leading-[39.06px] leading-[31.03px] text-[#333333] lg:mt-[62px] md:mt-[50px] lg:text-center md:text-center uppercase">
+          NewsLetter
+        </h3>
+        <p className="lg:mt-[20px] mt-[12px] font-[400] lg:text-[32px] lg:leading-[43.2px] text-[#333333] text-center hidden lg:block md:block">
+          Subscribe to get daily updates on new drops & exciting deals{" "}
+        </p>
+        <p className="mt-[12px] leading-[15.71px] text-[11.64px] font-[400] w-[319.69px] h-[16px] text-[#333333] lg:hidden md:hidden">
+          SUBSCRIBE TO OUR DAILY UPDATES AND NEWSLETTERS
+        </p>
+
+        <form className="lg:text-center lg:mt-[34px] mt-[25px] md:text-center lg:flex grid gap-6 md:place-items-center md:justify-center">
+          <input
+            type="text"
+            required
+            placeholder="ENTER YOUR EMAIL"
+            className="w-[340px] lg:w-[446px] h-[46px] lg:h-[60px] border-[#333333] border outline-[#333333] px-4 text-[16px] text-[#333333] font-[400]"
+          />
+          <button
+            type="submit"
+            className="lg:mx-[23px] gap-0 bg-[#272727] text-[#FFFFFF] w-[181.63px] h-[60px] text-[16px] lg:leading-[20.69px] font-[400] uppercase mt-[26px] md:mt-0 lg:mt-0 hover:opacity-75"
+          >
+            Subscribe
+          </button>
+        </form>
       </div>
     </div>
   );
