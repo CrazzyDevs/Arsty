@@ -47,7 +47,9 @@ const Navbar = () => {
             <FiSearch className="cursor-pointer lg:w-[28px] lg:h-[28px] w-[16px]" />
           </li>
           <li>
-            <FiShoppingCart className="cursor-pointer lg:w-[28px] lg:h-[28px] w-[17px]" />
+            <NavLink to="/marketPlace">
+             <FiShoppingCart className="cursor-pointer lg:w-[28px] lg:h-[28px] w-[17px]" />
+            </NavLink>
           </li>
           <li className="hidden md:flex">
             <NavLink to="/drop">
