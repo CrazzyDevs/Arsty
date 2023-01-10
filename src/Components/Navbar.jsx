@@ -47,7 +47,9 @@ const Navbar = () => {
             <FiSearch className="cursor-pointer lg:w-[28px] lg:h-[28px] w-[16px]" />
           </li>
           <li>
-            <FiShoppingCart className="cursor-pointer lg:w-[28px] lg:h-[28px] w-[17px]" />
+            <NavLink to="/marketPlace">
+             <FiShoppingCart className="cursor-pointer lg:w-[28px] lg:h-[28px] w-[17px]" />
+            </NavLink>
           </li>
           <li className="hidden md:flex">
             <NavLink to="/drop">
@@ -60,7 +62,7 @@ const Navbar = () => {
       {/* Mobile nav */}
       <ul
         className={
-          !nav ? "hidden" : "absolute w-full px-8 h-[736px] bg-[#fff] top-0"
+          !nav ? "hidden" : "absolute w-full px-8 h-full bg-[#fff] top-0 z-10"
         }
       >
         {/* Menubar*/}
