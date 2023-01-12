@@ -10,8 +10,13 @@ module.exports = {
       switzer: ["switzer", "sans-serif"],
       serif: ["clash display", "sans-serif"],
       sentient: ["sentient", "serif"],
+      stix: ["stix-two-text", "serif"],
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        clash: "Clash",
+      },
+    },
   },
   plugins: [],
 };

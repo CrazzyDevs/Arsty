@@ -18,16 +18,16 @@ const Footer = () => {
 
         <div>
           <ul>
-            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[26px] md:text-[19px]  text-[#333333] hover:opacity-50 w-[69px] h-[35px] mt-[50px]">
+            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px]  text-[#333333] hover:opacity-50 w-[69px] h-[35px] mt-[50px]">
               <Link to="/">Home</Link>
             </li>
-            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[26px] md:text-[19px] text-[#333333] hover:opacity-50 w-[94px] h-[35px] mt-[18px]">
+            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px] text-[#333333] hover:opacity-50 w-[94px] h-[35px] mt-[18px]">
               <Link to="/auction">Auctions</Link>
             </li>
-            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[26px] md:text-[19px] text-[#333333] hover:opacity-50 w-[13418] h-[35px] mt-[26px]">
+            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px] text-[#333333] hover:opacity-50 w-[13418] h-[35px] mt-[26px]">
               <Link to="/marketplace">MarketPlace</Link>
             </li>
-            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[26px] md:text-[19px] text-[#333333] hover:opacity-50 w-[65px] h-[35px] mt-[18px]">
+            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px] text-[#333333] hover:opacity-50 w-[65px] h-[35px] mt-[18px]">
               <Link to="/drop">Drop</Link>
             </li>
           </ul>
@@ -35,16 +35,16 @@ const Footer = () => {
 
         <div>
           <ul>
-            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[26px] md:text-[19px]  text-[#333333] hover:opacity-50 w-[69px] h-[35px] mt-[50px]">
+            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px]  text-[#333333] hover:opacity-50 w-[69px] h-[35px] mt-[50px]">
               <Link to="/">Blog</Link>
             </li>
-            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[26px] md:text-[19px] text-[#333333] hover:opacity-50 w-[94px] h-[35px] mt-[18px]">
+            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px] text-[#333333] hover:opacity-50 w-[94px] h-[35px] mt-[18px]">
               <Link to="/auction">Wallets</Link>
             </li>
-            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[26px] md:text-[19px] text-[#333333] hover:opacity-50 w-[134px] h-[35px] mt-[26px]">
+            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px] text-[#333333] hover:opacity-50 w-[134px] h-[35px] mt-[26px]">
               <Link to="/marketplace">Rates</Link>
             </li>
-            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[26px] md:text-[19px] text-[#333333] hover:opacity-50 w-[109px] h-[35px] mt-[18px]">
+            <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px] text-[#333333] hover:opacity-50 w-[109px] h-[35px] mt-[18px]">
               <Link to="/drop">High bids</Link>
             </li>
           </ul>
@@ -54,20 +54,20 @@ const Footer = () => {
         <div className="mt-[60px]">
           <div className="flex">
             <AiOutlineMail className="w-[41px] h-[34px]" />
-            <p className="text-[26px] text-[#333333] leading-[35.1px] font-[400] mx-[20px]">
+            <p className="text-[20px] text-[#333333] leading-[24x] font-[400] mx-[20px]">
               artsystudios@gmail.com
             </p>
           </div>
 
           <div className="mt-[50px] flex">
             <MdOutlineLocationOn className="w-[41px] h-[58px]" />
-            <p className="text-[26px] text-[#333333] leading-[35.1px] font-[400] mx-[20px] flex items-center justify-center place-items-center">
+            <p className="text-[20px] text-[#333333] leading-[24px] font-[400] mx-[20px] flex items-center justify-center place-items-center">
               Lagos, Nigeria.
             </p>
           </div>
         </div>
       </div>
-      <p className="text-[#989998] font-[500] font-[switzer] text-[24px] mt-[91px] text-center lg:block md:block hidden">
+      <p className="text-[#989998] font-[500] font-[switzer] text-[16px] mt-[91px] text-center lg:block md:block hidden">
         Artsystudios © 2022. All Rights Reserved.
       </p>
       {/* end */}
