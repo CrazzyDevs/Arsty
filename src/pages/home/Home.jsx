@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="px-2">
+      {/* Hero */}
       <div className="grid place-items-center text-[#292929] text-center">
         <h1 className="font-[clash] font-[500px] md:font-[600px] lg:font-[600px] leading-[48px] md:leading-[55px] lg:leading-[125px] text-[32px] md:text-[40px] lg:text-[80px] w-[322px] md:w-[500px] lg:w-[100%]">
           Photography is poetry and beautiful untold stories
@@ -15,10 +16,12 @@ const Home = () => {
         </p>
       </div>
 
+      {/* Carosuel */}
       <div>
         <Carosuel />
       </div>
 
+      {/* cards */}
       <div className="mt-[112px] text-[#292929] text-[28px] font-[700] leading-[43.88px]">
         <h3>Featured products</h3>
 
@@ -30,7 +33,7 @@ const Home = () => {
           {/* card content */}
           <div className="lg:mt-[60px] md:mt-[30px]">
             {/* image content */}
-            <div className="mt-[30px] lg:hidden md:hidden block">
+            <div className="mt-[30px] lg:hidden md:hidden block relative">
               <div className="flex justify-center items-center place-items-center mt-[50px]">
                 <h3 className=" mt-[35%] text-center text-[#FFFFFF] text-[30px] leading-[36.9px] font-[clash] absolute">
                   Boolean Egyptian
@@ -41,7 +44,7 @@ const Home = () => {
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673288348/Vector_a3oz6z.png"
                   alt="arrow"
-                  className="w-[40px] h-[26.25px] mt-[26px] mx-[19px]"
+                  className="w-[40px] h-[26.25px] mt-[26px] mx-[19px] hover:opacity-80"
                 />
               </div>
             </div>
@@ -54,11 +57,25 @@ const Home = () => {
             />
 
             {/* Desxtop image */}
-            <img
-              src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043075/image1_h3mp1a.png"
-              alt="girl"
-              className="hidden md:block lg:block"
-            />
+            <div className="group">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043075/image1_h3mp1a.png"
+                  alt="girl"
+                  className="hidden md:block lg:block"
+                />
+                <div className="absolute w-full h-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <p className="text-[#ffff] font-[clash]">View products</p>
+                  <Link to="marketplace">
+                    <img
+                      src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673428485/Group_499_wcomix.png"
+                      alt="arrow"
+                      className="mx-5 fill-[#ffff] cursor-pointer w-[53px] h-[53px] mr-[55px] hover:opacity-75 inline-block"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
           {/* end of card content */}
 
@@ -104,14 +121,22 @@ const Home = () => {
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673301079/Vector_lf9pxy.png"
                   alt="arrow"
-                  className=" cursor-pointer w-[40px] h-[26px] mt-[26px] mx-[16px]"
+                  className=" cursor-pointer w-[40px] h-[26px] mt-[26px] mx-[16px] hover:opacity-80"
                 />
               </div>
             </div>
-            <hr className="text-[#333333] mt-[17px] w-[294px] md:hidden lg:hidden block" />
+            <hr className="text-[#333333] mt-[17px] w-[294px] md:hidden lg:hidden block " />
           </div>
           {/* end of under content card */}
         </div>
+
+        {/* <div className="">
+            <img
+              src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043075/image1_h3mp1a.png"
+              alt="girl"
+              className="hidden md:block lg:block"
+            />
+        </div> */}
 
         {/* Card 2 */}
         <hr className="text-[#333333] mt-[37px] max-w-full hidden lg:block md:block" />
@@ -158,7 +183,7 @@ const Home = () => {
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673301079/Vector_lf9pxy.png"
                   alt="arrow"
-                  className=" cursor-pointer w-[40px] h-[26px] mt-[26px] mx-[16px]"
+                  className=" cursor-pointer w-[40px] h-[26px] mt-[26px] mx-[16px] hover:opacity-80"
                 />
               </div>
             </div>
@@ -179,7 +204,7 @@ const Home = () => {
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673288348/Vector_a3oz6z.png"
                   alt="arrow"
-                  className="cursor-pointer w-[40px] h-[26.25px] mt-[26px] mx-[19px]"
+                  className="cursor-pointer w-[40px] h-[26.25px] mt-[26px] mx-[19px] hover:opacity-80"
                 />
               </div>
             </div>
@@ -192,11 +217,26 @@ const Home = () => {
             />
 
             {/* Desxtop image */}
-            <img
-              src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043093/oldimage_itt9cu.png"
-              alt="girl"
-              className="hidden md:block lg:block"
-            />
+
+            <div className="group">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043093/oldimage_itt9cu.png"
+                  alt="girl"
+                  className="hidden md:block lg:block"
+                />
+                <div className="absolute w-full h-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <p className="text-[#ffff] font-[clash]">View products</p>
+                  <Link to="marketplace">
+                    <img
+                      src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673428485/Group_499_wcomix.png"
+                      alt="arrow"
+                      className="mx-5 fill-[#ffff] cursor-pointer w-[53px] h-[53px] mr-[55px] hover:opacity-75 inline-block"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
           {/* end of card content */}
 
@@ -242,7 +282,7 @@ const Home = () => {
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673301079/Vector_lf9pxy.png"
                   alt="arrow"
-                  className="w-[40px] h-[26px] mt-[26px] mx-[16px]"
+                  className="w-[40px] h-[26px] mt-[26px] mx-[16px] hover:opacity-80"
                 />
               </div>
             </div>
@@ -281,11 +321,25 @@ const Home = () => {
             />
 
             {/* Desxtop image */}
-            <img
-              src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043071/eygpt_jtohb9.png"
-              alt="eygpt"
-              className="hidden md:block lg:block"
-            />
+            <div className="group">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043071/eygpt_jtohb9.png"
+                  alt="eygpt"
+                  className="hidden md:block lg:block"
+                />
+                <div className="absolute w-full h-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <p className="text-[#ffff] font-[clash]">View products</p>
+                  <Link to="marketplace">
+                    <img
+                      src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673428485/Group_499_wcomix.png"
+                      alt="arrow"
+                      className="mx-5 fill-[#ffff] cursor-pointer w-[53px] h-[53px] mr-[55px] hover:opacity-75 inline-block"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
           {/* end of card content */}
 
@@ -331,7 +385,7 @@ const Home = () => {
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673301079/Vector_lf9pxy.png"
                   alt="arrow"
-                  className="cursor-pointer w-[40px] h-[26px] mt-[26px] mx-[16px]"
+                  className="cursor-pointer w-[40px] h-[26px] mt-[26px] mx-[16px] hover:opacity-80"
                 />
               </div>
             </div>
@@ -348,8 +402,66 @@ const Home = () => {
          <div className="place-items-center justify-center flex items-center absolute">
           <img src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673044148/monalisa_rizbkl.png" alt="img bg" className=" w-[347px] h-[269px] object-cover mx-[33px] mt-[34px]"/>
         </div>
-      </div> */}
+      </div>  */}
 
+      <div className="lg:mt-[200px] mt-[100px]">
+        <div className="lg:block hidden">
+          <div className="relative overflow-hidden">
+            <img
+              src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673334848/Rectangle_90_ocxe6k.png"
+              alt="bg img"
+            />
+            <div className="absolute flex items-center justify-center -bottom-10 opacity-100 place-items-center m-20">
+              <div className="lg:w-[1000px] lg:h-[546px] grid items-start justify-start place-items-start text-start">
+                <p className="lg:text-[40px] lg:leading-[54px] text-[#FFFFFF]">
+                  See Upcoming Auctions and Exhibitions
+                </p>
+                <img
+                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673430562/Arrow_3_jcjlg1.png"
+                  alt="arrow"
+                />
+                <div className="relative">
+                  <div className="grid items-end justify-end ">
+                     <img
+                    src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673044148/monalisa_rizbkl.png"
+                    alt="img bg"
+                    className="lg:w-[1200px] lg:h-[446px] w-[347px] h-[269px] object-cover"
+                  />
+                  <div className=" absolute items-start justify-start place-items-start lg:mx-[72px]">
+                    <img
+                      src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673431361/Ellipse_6_a0du0m.png"
+                      alt="circle"
+                      className="w-[15.97px] h-[15.97px] mx-[12px]"
+                    />
+                    <h3 className=" text-[#FFFFFF] font-[400] lg:text-[29.23px] lg:w-[353.88px]">
+                      MONALISA REDEFINED IN STYLE.
+                    </h3>
+                    <div className="grid grid-cols-2 justify-between">
+                      <div className="col-span-2...">
+                        <p className="lg:w-[428px] lg:h-[81.14px] text-[#FFFFFF] font-[500] lg:leading-[21.41px] lg:text-[15.86px] ">GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH INVESTORS 
+                         AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR HIGHEST AND LOWEST BIDS.</p>
+                      </div>
+                      
+                      <div className="flex justify-end">
+
+                        <Link to="auction">
+                        <p className="text-[24px] font-[400] text-[#FFFFFF] lg:leading-[32.4px] underline w-[100px]">See more</p>
+                        </Link>
+                        
+                        <button className="border text-[#ffff] rounded-md h-[62px] w-[181px] text-[24px] leading-[32.4px] font-[400] mx-[42px]">set a reminder</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>               
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* marketplace and auction */}
       <div className="mt-[100px]">
         <hr className="text-[#292929] mt-[37px] max-w-full" />
         <div className="flex justify-between lg:mt-[59px] md:mt-[40px] mt-[24px]">
