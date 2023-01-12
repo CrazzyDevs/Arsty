@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       {/* Desxtop footer */}
-      <div class="lg:flex justify-around lg:mt-[60px] md:mt-[50px] md:flex hidden">
+      <div className="lg:flex justify-around lg:mt-[60px] md:mt-[50px] md:flex hidden">
         {/* logo */}
         <div className="mt-[163px] lg:block md:hidden">
           <img
