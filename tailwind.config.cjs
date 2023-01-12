@@ -4,7 +4,12 @@ module.exports = {
   theme: {
     colors: {
       black: "#292929",
+      pureBlack: "#000000",
+      confusedBlack: "#333333",
       grey: "#999999",
+      blue: "#3341C1",
+      green: "#3EA03B",
+      lightGrey: "#F4F2F2",
     },
     fontFamily: {
       switzer: ["switzer", "sans-serif"],
@@ -15,6 +20,11 @@ module.exports = {
     extend: {
       fontFamily: {
         clash: "Clash",
+      },
+    },
+    extend: {
+      boxShadow: {
+        "3xl": "rgba(149, 157, 165, 0.2) 0px 8px 24px",
       },
     },
   },

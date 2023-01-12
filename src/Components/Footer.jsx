@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       {/* Desxtop footer */}
-      <div class="lg:flex justify-around lg:mt-[60px] md:mt-[50px] md:flex hidden">
+      <div className="lg:flex justify-around lg:mt-[60px] md:mt-[50px] md:flex hidden">
         {/* logo */}
         <div className="mt-[163px] lg:block md:hidden">
           <img
@@ -36,16 +36,16 @@ const Footer = () => {
         <div>
           <ul>
             <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px]  text-[#333333] hover:opacity-50 w-[69px] h-[35px] mt-[50px]">
-              <Link to="/">Blog</Link>
+              Blog
             </li>
             <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px] text-[#333333] hover:opacity-50 w-[94px] h-[35px] mt-[18px]">
-              <Link to="/auction">Wallets</Link>
+              Wallets
             </li>
             <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px] text-[#333333] hover:opacity-50 w-[134px] h-[35px] mt-[26px]">
-              <Link to="/marketplace">Rates</Link>
+              Rates
             </li>
             <li className="cursor-pointer font-[500] leading-[35px] lg:text-[20px] md:text-[19px] text-[#333333] hover:opacity-50 w-[109px] h-[35px] mt-[18px]">
-              <Link to="/drop">High bids</Link>
+              High bids
             </li>
           </ul>
         </div>
