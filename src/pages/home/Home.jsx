@@ -65,7 +65,7 @@ const Home = () => {
                   className="hidden md:block lg:block"
                 />
                 <div className="absolute w-full h-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <p className="text-[#ffff] font-[clash]">View products</p>
+                  <p className="text-[#ffff] font-[stix]">View products</p>
                   <Link to="marketplace">
                     <img
                       src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673428485/Group_499_wcomix.png"
@@ -81,7 +81,7 @@ const Home = () => {
 
           {/* under content card */}
           <div className="lg:mt-[61px] mt-[18px]">
-            <h3 className="md:mx-[20px] lg:mx-[37px] hidden lg:block md:block font-[700] font-[switzer] text-[40px] leading-[50px] text-[#333333]">
+            <h3 className="md:mx-[20px] lg:mx-[37px] hidden lg:block md:block font-[700] font-[stix] text-[40px] leading-[50px] text-[#333333]">
               The Boolean Egyptian
             </h3>
             <p className="md:mx-[20px] lg:mx-[37px] lg:mt-[38px] md:mt-[20px] lg:font-[400] lg:text-[#333333] text-[15px] lg:text-[24px] text-[#616161] leading-[23.25px] lg:leading-[32.4px] lg:w-[540px] lg:h-[128px] w-[343px] h-[92px] text-start">
@@ -94,28 +94,30 @@ const Home = () => {
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673084428/Rectangle_82_cc3kxf.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover  border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-40  border-[#78A3AD]"
                 />
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673084425/Rectangle_87_kbxcpb.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-30 border border-[#78A3AD]"
                 />
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673083921/Rectangle_66_zwayn8.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-20 border border-[#78A3AD]"
                 />
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673083705/Rectangle_251_w99hca.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-10 border border-[#78A3AD]"
                 />
+               
               </div>
-              <div>
+              <div className="flex">
                 <h5 className="lg:text-[24px] text-[16px] lg:text-[#333333] text-[#000000] leading-[22px] lg:leading-[32px] lg:mx-[32px] lg:w-[193px] font-[500] w-[129px] h-[22px] lg:h-[32px]">
                   64 major creators
                 </h5>
+                
               </div>
               <div className="border border-[#333333] rounded-[50%] w-[78px] h-[78px] text-[#333333] hidden lg:block md:block">
                 <img
@@ -143,7 +145,7 @@ const Home = () => {
         <div className="grid lg:grid-cols-2">
           {/* untop in large screen content card */}
           <div className="lg:mt-[61px] mt-[18px] hidden lg:block md:block">
-            <h3 className="hidden lg:block md:block font-[700] font-[switzer] text-[40px] leading-[50px] text-[#333333]">
+            <h3 className="hidden lg:block md:block font-[700] font-[stix] text-[40px] leading-[50px] text-[#333333]">
               The Boolean Egyptian
             </h3>
             <p className="lg:mt-[38px] md:mt-[20px] lg:font-[400] lg:text-[#333333] text-[15px] lg:text-[24px] text-[#616161] leading-[23.25px] lg:leading-[32.4px] lg:w-[540px] lg:h-[128px] w-[343px] h-[92px] text-start">
@@ -226,7 +228,7 @@ const Home = () => {
                   className="hidden md:block lg:block"
                 />
                 <div className="absolute w-full h-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <p className="text-[#ffff] font-[clash]">View products</p>
+                  <p className="text-[#ffff] font-[stix]">View products</p>
                   <Link to="marketplace">
                     <img
                       src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673428485/Group_499_wcomix.png"
@@ -242,7 +244,7 @@ const Home = () => {
 
           {/* under content card */}
           <div className="lg:mt-[61px] mt-[18px] lg:hidden md:hidden block">
-            <h3 className="md:mx-[20px] lg:mx-[37px] hidden lg:block md:block font-[700] font-[switzer] text-[40px] leading-[50px] text-[#333333]">
+            <h3 className="md:mx-[20px] lg:mx-[37px] hidden lg:block md:block font-[700] font-[stix] text-[40px] leading-[50px] text-[#333333]">
               The Boolean Egyptian
             </h3>
             <p className="md:mx-[20px] lg:mx-[37px] lg:mt-[38px] md:mt-[20px] lg:font-[400] lg:text-[#333333] text-[15px] lg:text-[24px] text-[#616161] leading-[23.25px] lg:leading-[32.4px] lg:w-[540px] lg:h-[128px] w-[343px] h-[92px] text-start">
@@ -329,7 +331,7 @@ const Home = () => {
                   className="hidden md:block lg:block"
                 />
                 <div className="absolute w-full h-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <p className="text-[#ffff] font-[clash]">View products</p>
+                  <p className="text-[#ffff] font-[stix]">View products</p>
                   <Link to="marketplace">
                     <img
                       src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673428485/Group_499_wcomix.png"
@@ -345,7 +347,7 @@ const Home = () => {
 
           {/* under content card */}
           <div className="lg:mt-[61px] mt-[18px]">
-            <h3 className="md:mx-[20px] lg:mx-[37px] hidden lg:block md:block font-[700] font-[switzer] text-[40px] leading-[50px] text-[#333333]">
+            <h3 className="md:mx-[20px] lg:mx-[37px] hidden lg:block md:block font-[700] font-[stix] text-[40px] leading-[50px] text-[#333333]">
               The Boolean Egyptian
             </h3>
             <p className="md:mx-[20px] lg:mx-[37px] lg:mt-[38px] md:mt-[20px] lg:font-[400] lg:text-[#333333] text-[15px] lg:text-[24px] text-[#616161] leading-[23.25px] lg:leading-[32.4px] lg:w-[540px] lg:h-[128px] w-[343px] h-[92px] text-start">
@@ -422,38 +424,43 @@ const Home = () => {
                 />
                 <div className="relative">
                   <div className="grid items-end justify-end ">
-                     <img
-                    src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673044148/monalisa_rizbkl.png"
-                    alt="img bg"
-                    className="lg:w-[1200px] lg:h-[446px] w-[347px] h-[269px] object-cover"
-                  />
-                  <div className=" absolute items-start justify-start place-items-start lg:mx-[72px]">
                     <img
-                      src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673431361/Ellipse_6_a0du0m.png"
-                      alt="circle"
-                      className="w-[15.97px] h-[15.97px] mx-[12px]"
+                      src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673044148/monalisa_rizbkl.png"
+                      alt="img bg"
+                      className="lg:w-[1200px] lg:h-[446px] w-[347px] h-[269px] object-cover"
                     />
-                    <h3 className=" text-[#FFFFFF] font-[400] lg:text-[29.23px] lg:w-[353.88px]">
-                      MONALISA REDEFINED IN STYLE.
-                    </h3>
-                    <div className="grid grid-cols-2 justify-between">
-                      <div className="col-span-2...">
-                        <p className="lg:w-[428px] lg:h-[81.14px] text-[#FFFFFF] font-[500] lg:leading-[21.41px] lg:text-[15.86px] ">GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH INVESTORS 
-                         AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR HIGHEST AND LOWEST BIDS.</p>
-                      </div>
-                      
-                      <div className="flex justify-end">
+                    <div className=" absolute items-start justify-start place-items-start lg:mx-[72px]">
+                      <img
+                        src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673431361/Ellipse_6_a0du0m.png"
+                        alt="circle"
+                        className="w-[15.97px] h-[15.97px] mx-[12px]"
+                      />
+                      <h3 className=" text-[#FFFFFF] font-[400] lg:text-[29.23px] lg:w-[353.88px]">
+                        MONALISA REDEFINED IN STYLE.
+                      </h3>
+                      <div className="grid grid-cols-2 justify-between">
+                        <div className="col-span-2...">
+                          <p className="lg:w-[428px] lg:h-[81.14px] text-[#FFFFFF] font-[500] lg:leading-[21.41px] lg:text-[15.86px] ">
+                            GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND
+                            CONNECT WITH INVESTORS AND AUCTIONEERS ACROSS THE
+                            WORLD BRINGING THEIR HIGHEST AND LOWEST BIDS.
+                          </p>
+                        </div>
 
-                        <Link to="auction">
-                        <p className="text-[24px] font-[400] text-[#FFFFFF] lg:leading-[32.4px] underline w-[100px]">See more</p>
-                        </Link>
-                        
-                        <button className="border text-[#ffff] rounded-md h-[62px] w-[181px] text-[24px] leading-[32.4px] font-[400] mx-[42px]">set a reminder</button>
+                        <div className="flex justify-end">
+                          <Link to="auction">
+                            <p className="text-[24px] font-[400] text-[#FFFFFF] lg:leading-[32.4px] underline w-[100px]">
+                              See more
+                            </p>
+                          </Link>
+
+                          <button className="border text-[#ffff] rounded-md h-[62px] w-[181px] text-[24px] leading-[32.4px] font-[400] mx-[42px]">
+                            set a reminder
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  </div>               
-                
                 </div>
               </div>
             </div>
