@@ -8,6 +8,11 @@
   }
 }
 
+@font-face {
+  font-family: "clash";
+  src: local("clashDisplay"), url("./fonts/ClashDisplay-Bold.otf") format("opentype") 
+}
+
 .active {
   text-decoration: underline;
   font-weight: bold;
