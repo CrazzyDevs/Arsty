@@ -10,6 +10,7 @@ module.exports = {
       blue: "#3341C1",
       green: "#3EA03B",
       lightGrey: "#F4F2F2",
+      fadeLink: "#BCB7B7",
     },
     fontFamily: {
       switzer: ["switzer", "sans-serif"],
