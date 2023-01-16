@@ -17,12 +17,24 @@
   text-decoration: underline;
   font-weight: bold;
 }
-body{
+body {
   position: relative;
+}
+
+.explore {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.explore-carousel .react-multi-carousel-track {
+  column-gap: 24px;
+}
+
+.explore-carousel .react-multi-carousel-item {
+  width: auto !important;
 }
 
 /* font-family: 'Switzer', sans-serif;
 font-family: 'Clash Display', sans-serif; 
 font-family: 'Sentient', serif;
 */
-

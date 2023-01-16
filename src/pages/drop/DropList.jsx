@@ -52,7 +52,7 @@ const DropList = () => {
                         {items.title}
                       </p>
                       <div className="flex lg:items-center lg:place-items-center lg:text-center lg:justify-center text-start">
-                        <p className="text-[#FFFFFF] lg:text-[30px] text-[22px]  md:text-[20px] font-[stix] lg:leading-[54px] lg:mx-[34px] mx-[30px] md:mx-[32px]">
+                        <p className="text-[#FFFFFF] lg:text-[30px] text-[22px] md:text-[20px] font-[stix] lg:leading-[54px] lg:mx-[34px] mx-[30px] md:mx-[32px]">
                           {items.time}
                         </p>
                         <button className="bg-[#4693ED] text-[#FFFFFF] w-[107px] h-[35px] text-[18px] rounded-full hover:text-black hidden lg:block">
