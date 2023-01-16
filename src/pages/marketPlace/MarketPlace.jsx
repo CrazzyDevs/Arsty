@@ -4,6 +4,7 @@ import { MdKeyboardArrowUp } from "react-icons/md";
 import { BsFilter } from "react-icons/bs";
 import { BsCheck } from "react-icons/bs";
 import { productsArr } from "./data";
+import { Link } from "react-router-dom";
 
 const MarketPlace = () => {
   const cartArr = [
@@ -148,7 +149,8 @@ const MarketPlace = () => {
         <div className="w-3/4 p-3 flex justify-between flex-wrap gap-y-10">
           {productsArr.map(({ id, name, price, img }) => {
             return (
-              <div
+              <Link to={'/marketplace/1'}>
+                <div
                 className="w-60 shadow-xl p-3 rounded-lg cursor-pointer"
                 key={id}
               >
@@ -162,6 +164,7 @@ const MarketPlace = () => {
                 <p className="uppercase mb-3">{name}</p>
                 <p className="font-bold text-lg">${price.toFixed(2)}</p>
               </div>
+              </Link>
             );
           })}
         </div>
