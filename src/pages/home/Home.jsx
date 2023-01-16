@@ -1,6 +1,7 @@
 import React from "react";
 import Carosuel from "./Carousel";
 import { Link } from "react-router-dom";
+import Newsletter from "./Newsletter";
 const Home = () => {
   return (
     <div className="px-2">
@@ -111,13 +112,11 @@ const Home = () => {
                   alt="picture"
                   className="rounded-full w-[41px] h-[41px] object-cover z-10 border border-[#78A3AD]"
                 />
-               
               </div>
               <div className="flex">
                 <h5 className="lg:text-[24px] text-[16px] lg:text-[#333333] text-[#000000] leading-[22px] lg:leading-[32px] lg:mx-[32px] lg:w-[193px] font-[500] w-[129px] h-[22px] lg:h-[32px]">
                   64 major creators
                 </h5>
-                
               </div>
               <div className="border border-[#333333] rounded-[50%] w-[78px] h-[78px] text-[#333333] hidden lg:block md:block">
                 <img
@@ -397,15 +396,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="lg:mt-[200px] mt-[100px] relative">
-        <div className="absolute">
-           <img src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673334848/Rectangle_90_ocxe6k.png" alt="bg" className="h-[336px]"/>
-        </div>
-         <div className="place-items-center justify-center flex items-center absolute">
-          <img src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673044148/monalisa_rizbkl.png" alt="img bg" className=" w-[347px] h-[269px] object-cover mx-[33px] mt-[34px]"/>
-        </div>
-      </div>  */}
-
       <div className="lg:mt-[200px] mt-[100px]">
         <div className="lg:block hidden">
           <div className="relative overflow-hidden">
@@ -427,7 +417,7 @@ const Home = () => {
                     <img
                       src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673044148/monalisa_rizbkl.png"
                       alt="img bg"
-                      className="lg:w-[1200px] lg:h-[446px] w-[347px] h-[269px] object-cover"
+                      className="lg:w-[1200px] lg:h-[446px] h-[269px] object-cover"
                     />
                     <div className=" absolute items-start justify-start place-items-start lg:mx-[72px]">
                       <img
@@ -465,6 +455,29 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="relative block lg:hidden md:hidden">
+        <img
+          src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673334848/Rectangle_90_ocxe6k.png"
+          alt="Background Image"
+          class="w-full"
+        />
+        <img
+          src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673044148/monalisa_rizbkl.png"
+          alt="Overlay Image"
+          class="absolute top-[90px] left-[164px] transform -translate-y-1/2 -translate-x-1/2 w-[269px]"
+        />
+        <div class="absolute top-10 left-[55px] text-center text-white items-center justify-center grid m-auto text-2xl">
+          <p className="text-[#FFFFFF] text-[19px] w-[200px] text-center">
+            MONALISA REDEFINED IN STYLE.
+          </p>
+          <Link to="drop">
+            <button className="border text-[#FFFFFF] mt-[5px] rounded-md h-[36px] w-[101px] text-[14px] leading-[18px] font-[400] mx-[42px]">
+              set a reminder
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -524,32 +537,7 @@ const Home = () => {
       </div>
 
       {/* Newsletter */}
-      <div className="lg:border md:border rounded-[#333333] lg:w-full lg:h-[320px] md:h-[300px] mt-[100px]">
-        <h3 className="font-[400] lg:text-[30.21px] text-[24px] lg:leading-[39.06px] leading-[31.03px] text-[#333333] lg:mt-[62px] md:mt-[50px] lg:text-center md:text-center uppercase">
-          NewsLetter
-        </h3>
-        <p className="lg:mt-[20px] mt-[12px] font-[400] lg:text-[32px] lg:leading-[43.2px] text-[#333333] text-center hidden lg:block md:block">
-          Subscribe to get daily updates on new drops & exciting deals{" "}
-        </p>
-        <p className="mt-[12px] leading-[15.71px] text-[11.64px] font-[400] w-[319.69px] h-[16px] text-[#333333] lg:hidden md:hidden">
-          SUBSCRIBE TO OUR DAILY UPDATES AND NEWSLETTERS
-        </p>
-
-        <form className="lg:text-center lg:mt-[34px] mt-[25px] md:text-center lg:flex grid gap-6 md:place-items-center md:justify-center">
-          <input
-            type="text"
-            required
-            placeholder="ENTER YOUR EMAIL"
-            className="w-[340px] lg:w-[446px] h-[46px] lg:h-[60px] border-[#333333] border outline-[#333333] px-4 text-[16px] text-[#333333] font-[400]"
-          />
-          <button
-            type="submit"
-            className="lg:mx-[23px] gap-0 bg-[#272727] text-[#FFFFFF] w-[181.63px] h-[60px] text-[16px] lg:leading-[20.69px] font-[400] uppercase mt-[26px] md:mt-0 lg:mt-0 hover:opacity-75"
-          >
-            Subscribe
-          </button>
-        </form>
-      </div>
+      <Newsletter />
     </div>
   );
 };
