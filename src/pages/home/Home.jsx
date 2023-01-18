@@ -458,7 +458,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div class="relative block lg:hidden md:hidden">
+      {/* <div class="relative block lg:hidden md:hidden">
         <img
           src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673334848/Rectangle_90_ocxe6k.png"
           alt="Background Image"
@@ -479,7 +479,7 @@ const Home = () => {
             </button>
           </Link>
         </div>
-      </div>
+      </div> */}
 
       {/* marketplace and auction */}
       <div className="mt-[100px]">
