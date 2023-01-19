@@ -27,19 +27,7 @@ function Carosuel() {
 
   return (
     <div>
-      {/* <Carousel autoplay effect="fade" dots={false}>
-        {auctionProduct.map((data) => (
-          <div className="" key={data.id}>
-            <img
-              src={data.imageUrl}
-              alt="img"
-              className="w-[358px] h-[444px] object-fit justify-center text-center"
-            />
-          </div>
-        ))}
-      </Carousel> */}
-
-      <div className="lg:block md:block hidden">
+      <div className="lg:block md:block hidden pt-12">
         <Carousel
           partialVisible={true}
           additionalTransfrom={0}
@@ -62,22 +50,23 @@ function Carosuel() {
           containerClass="carousel-container"
           responsive={responsive}
         >
-          {auctionProduct.map((prodcuCard) => (
-            <div
-              key={prodcuCard.id}
-              style={{
-                backgroundImage: `url(${prodcuCard.imageUrl})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-              }}
-              className="h-[444px] md:w-[200px] lg:w-[268px] mt-[82px] md:mt-[40px]"
-            ></div>
-          ))}
+          {auctionProduct.map(({ id, imageUrl }) => {
+            return (
+              <div className="pt-12 space-y-8" key={id}>
+                <div className="w-72 h-72 overflow-hidden">
+                  <img src={imageUrl} alt="img" className="w-full h-full" />
+                </div>
+              </div>
+            );
+          })}
         </Carousel>
       </div>
 
       <div className="md:hidden lg:hidden place-items-center justify-center items-center grid mt-[34px]">
-        <img src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043051/stackimg2_a1xvc6.png" alt="stacked image"/>
+        <img
+          src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043051/stackimg2_a1xvc6.png"
+          alt="stacked image"
+        />
       </div>
     </div>
   );

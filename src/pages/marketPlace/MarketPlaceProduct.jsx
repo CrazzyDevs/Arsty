@@ -158,11 +158,11 @@ const MarketPlaceProduct = () => {
                 <p className="flex justify-end">
                   <BsHeart className="text-xl" />
                 </p>
-                <div className="w-72 h-72 overflow-hidden">
+                <div className="w-72 h-72 overflow-hidden ">
                   <img
                     src={img}
                     alt={name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full "
                   />
                 </div>
                 <div className="flex justify-between items-center">

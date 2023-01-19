@@ -18,13 +18,11 @@ const Home = () => {
       </div>
 
       {/* Carosuel */}
-      <div>
-        <Carosuel />
-      </div>
+      <Carosuel />
 
       {/* cards */}
       <div className="mt-[112px] text-[#292929] text-[28px] font-[700] leading-[43.88px]">
-        <h3>Featured products</h3>
+        <h2>Featured products</h2>
 
         {/* Cards  */}
 
@@ -43,7 +41,7 @@ const Home = () => {
 
               <div className="border rounded-full absolute w-[78px] h-[78.75px] text-[#FFFFFF] mt-[137px] mx-[264px]">
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673288348/Vector_a3oz6z.png"
+                  src="https://dl.kraken.io/web/06f6e47508df14424eeec11419179529/res.cloudinary.com/dpokiomqq/image/upload/v1673288348/Vector_a3oz6z.png"
                   alt="arrow"
                   className="w-[40px] h-[26.25px] mt-[26px] mx-[19px] hover:opacity-80"
                 />
@@ -52,24 +50,24 @@ const Home = () => {
 
             {/* Mobile image */}
             <img
-              src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673287167/Rectangle_236_cklqlh.png"
+              src="https://dl.kraken.io/web/83288940eb8e3586778cdc6a871cc481/res.cloudinary.com/dpokiomqq/image/upload/v1673287167/Rectangle_236_cklqlh.png"
               alt="girl"
-              className="lg:hidden md:hidden block"
+              className="lg:hidden md:hidden block bg-[#616161]"
             />
 
             {/* Desxtop image */}
             <div className="group">
               <div className="relative overflow-hidden">
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043075/image1_h3mp1a.png"
+                  src="https://dl.kraken.io/web/6d6453567dfbb6fbb1826991724be355/res.cloudinary.com/dpokiomqq/image/upload/v1673043075/image1_h3mp1a.png"
                   alt="girl"
-                  className="hidden md:block lg:block"
+                  className="hidden md:block lg:block bg-[#616161]"
                 />
                 <div className="absolute w-full h-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <p className="text-[#ffff] font-[stix]">View products</p>
                   <Link to="marketplace">
                     <img
-                      src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673428485/Group_499_wcomix.png"
+                      src="https://dl.kraken.io/web/f702ea9a6bc9b7ccb178da67b5c403a1/res.cloudinary.com/dpokiomqq/image/upload/v1673428485/Group_499_wcomix.png"
                       alt="arrow"
                       className="mx-5 fill-[#ffff] cursor-pointer w-[53px] h-[53px] mr-[55px] hover:opacity-75 inline-block"
                     />
@@ -93,24 +91,24 @@ const Home = () => {
             <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 lg:mx-[37px] mt-[28px] place-items-center justify-center text-center gap-5">
               <div className="flex relative">
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673084428/Rectangle_82_cc3kxf.png"
+                  src="https://dl.kraken.io/web/e34fad6ff9315ac9944d003714afc02a/res.cloudinary.com/dpokiomqq/image/upload/v1673084428/Rectangle_82_cc3kxf.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover z-40  border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-40  border-[#78A3AD] bg-[#616161]"
                 />
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673084425/Rectangle_87_kbxcpb.png"
+                  src="https://dl.kraken.io/web/b514182d3a8533f1746a080a596bfef6/res.cloudinary.com/dpokiomqq/image/upload/v1673084425/Rectangle_87_kbxcpb.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover z-30 border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-30 border border-[#78A3AD] bg-[#616161]"
                 />
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673083921/Rectangle_66_zwayn8.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover z-20 border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-20 border border-[#78A3AD] bg-[#616161]"
                 />
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673083705/Rectangle_251_w99hca.png"
+                  src="https://dl.kraken.io/web/e36cd516d96a447b8ad1a3b714c6d0fa/res.cloudinary.com/dpokiomqq/image/upload/v1673083921/Rectangle_66_zwayn8.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover z-10 border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-10 border border-[#78A3AD] bg-[#616161]"
                 />
               </div>
               <div className="flex">
@@ -120,7 +118,7 @@ const Home = () => {
               </div>
               <div className="border border-[#333333] rounded-[50%] w-[78px] h-[78px] text-[#333333] hidden lg:block md:block">
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673301079/Vector_lf9pxy.png"
+                  src="https://dl.kraken.io/web/60fd6710edf5933ac3cdf5530a8511ab/res.cloudinary.com/dpokiomqq/image/upload/v1673301079/Vector_lf9pxy.png"
                   alt="arrow"
                   className=" cursor-pointer w-[40px] h-[26px] mt-[26px] mx-[16px] hover:opacity-80"
                 />
@@ -130,14 +128,6 @@ const Home = () => {
           </div>
           {/* end of under content card */}
         </div>
-
-        {/* <div className="">
-            <img
-              src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043075/image1_h3mp1a.png"
-              alt="girl"
-              className="hidden md:block lg:block"
-            />
-        </div> */}
 
         {/* Card 2 */}
         <hr className="text-[#333333] mt-[37px] max-w-full hidden lg:block md:block" />
@@ -153,26 +143,26 @@ const Home = () => {
               urna, porttitor rhoncus dolor pur
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 mt-[28px] place-items-center justify-center text-center gap-5">
-              <div className="flex">
+              <div className="flex relative">
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673084428/Rectangle_82_cc3kxf.png"
+                  src="https://dl.kraken.io/web/e34fad6ff9315ac9944d003714afc02a/res.cloudinary.com/dpokiomqq/image/upload/v1673084428/Rectangle_82_cc3kxf.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover  border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-40  border-[#78A3AD] bg-[#616161]"
                 />
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673084425/Rectangle_87_kbxcpb.png"
+                  src="https://dl.kraken.io/web/b514182d3a8533f1746a080a596bfef6/res.cloudinary.com/dpokiomqq/image/upload/v1673084425/Rectangle_87_kbxcpb.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-30 border border-[#78A3AD] bg-[#616161]"
                 />
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673083921/Rectangle_66_zwayn8.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-20 border border-[#78A3AD] bg-[#616161]"
                 />
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673083705/Rectangle_251_w99hca.png"
+                  src="https://dl.kraken.io/web/e36cd516d96a447b8ad1a3b714c6d0fa/res.cloudinary.com/dpokiomqq/image/upload/v1673083921/Rectangle_66_zwayn8.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover z-10 border border-[#78A3AD] bg-[#616161]"
                 />
               </div>
               <div>
@@ -182,7 +172,7 @@ const Home = () => {
               </div>
               <div className="border border-[#333333] rounded-[50%] w-[78px] h-[78px] text-[#333333] hidden lg:block md:block">
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673301079/Vector_lf9pxy.png"
+                  src="https://dl.kraken.io/web/60fd6710edf5933ac3cdf5530a8511ab/res.cloudinary.com/dpokiomqq/image/upload/v1673301079/Vector_lf9pxy.png"
                   alt="arrow"
                   className=" cursor-pointer w-[40px] h-[26px] mt-[26px] mx-[16px] hover:opacity-80"
                 />
@@ -203,18 +193,18 @@ const Home = () => {
 
               <div className="border rounded-full absolute w-[78px] h-[78.75px] text-[#FFFFFF] mt-[137px] mx-[264px]">
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673288348/Vector_a3oz6z.png"
+                  src="https://dl.kraken.io/web/2a724d762e6563b0b55f9c00beae4d06/res.cloudinary.com/dpokiomqq/image/upload/v1673288348/Vector_a3oz6z.png"
                   alt="arrow"
-                  className="cursor-pointer w-[40px] h-[26.25px] mt-[26px] mx-[19px] hover:opacity-80"
+                  className="cursor-pointer w-[40px] h-[26.25px] mt-[26px] mx-[19px] hover:opacity-80 bg-[#616161]"
                 />
               </div>
             </div>
 
             {/* Mobile image */}
             <img
-              src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673331671/Rectangle_230_eqilf9.png"
+              src="https://dl.kraken.io/web/4626871e51001f03914f5ae2c696806f/res.cloudinary.com/dpokiomqq/image/upload/v1673331671/Rectangle_230_eqilf9.png"
               alt="girl"
-              className="lg:hidden md:hidden block"
+              className="lg:hidden md:hidden block bg-[#616161]"
             />
 
             {/* Desxtop image */}
@@ -222,9 +212,9 @@ const Home = () => {
             <div className="group">
               <div className="relative overflow-hidden">
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043093/oldimage_itt9cu.png"
+                  src="https://dl.kraken.io/web/ed9a2bb1edf00c085a204cc06df59180/res.cloudinary.com/dpokiomqq/image/upload/v1673043093/oldimage_itt9cu.png"
                   alt="girl"
-                  className="hidden md:block lg:block"
+                  className="hidden md:block lg:block bg-[#616161]"
                 />
                 <div className="absolute w-full h-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <p className="text-[#ffff] font-[stix]">View products</p>
@@ -256,22 +246,22 @@ const Home = () => {
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673084428/Rectangle_82_cc3kxf.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover  border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover  border-[#78A3AD] bg-[#616161]"
                 />
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673084425/Rectangle_87_kbxcpb.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD] bg-[#616161]"
                 />
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673083921/Rectangle_66_zwayn8.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD] bg-[#616161]"
                 />
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673083705/Rectangle_251_w99hca.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD] bg-[#616161]"
                 />
               </div>
               <div>
@@ -281,9 +271,9 @@ const Home = () => {
               </div>
               <div className="border border-[#333333] rounded-[50%] w-[78px] h-[78px] text-[#333333] hidden lg:block md:block">
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673301079/Vector_lf9pxy.png"
+                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673428485/Group_499_wcomix.png"
                   alt="arrow"
-                  className="w-[40px] h-[26px] mt-[26px] mx-[16px] hover:opacity-80"
+                  className="w-[40px] h-[26px] mt-[26px] mx-[16px] hover:opacity-80 "
                 />
               </div>
             </div>
@@ -316,18 +306,18 @@ const Home = () => {
 
             {/* Mobile image */}
             <img
-              src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673332451/Rectangle_230_1_hlk5fl.png"
+              src="https://dl.kraken.io/web/41be3456e74ab469e204916541f0066e/res.cloudinary.com/dpokiomqq/image/upload/v1673332451/Rectangle_230_1_hlk5fl.png"
               alt="eygpt"
-              className="lg:hidden md:hidden block"
+              className="lg:hidden md:hidden block bg-[#616161]"
             />
 
             {/* Desxtop image */}
             <div className="group">
               <div className="relative overflow-hidden">
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673043071/eygpt_jtohb9.png"
+                  src="https://dl.kraken.io/web/f0ae315ed5b49fa249d9726e098eeee2/res.cloudinary.com/dpokiomqq/image/upload/v1673043071/eygpt_jtohb9.png"
                   alt="eygpt"
-                  className="hidden md:block lg:block"
+                  className="hidden md:block lg:block bg-[#616161]"
                 />
                 <div className="absolute w-full h-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <p className="text-[#ffff] font-[stix]">View products</p>
@@ -359,22 +349,22 @@ const Home = () => {
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673084428/Rectangle_82_cc3kxf.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover  border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover  border-[#78A3AD] bg-[#616161]"
                 />
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673084425/Rectangle_87_kbxcpb.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD] bg-[#616161]"
                 />
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673083921/Rectangle_66_zwayn8.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD] bg-[#616161]"
                 />
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673083705/Rectangle_251_w99hca.png"
                   alt="picture"
-                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD]"
+                  className="rounded-full w-[41px] h-[41px] object-cover border border-[#78A3AD] bg-[#616161]"
                 />
               </div>
               <div>
@@ -386,7 +376,7 @@ const Home = () => {
                 <img
                   src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673301079/Vector_lf9pxy.png"
                   alt="arrow"
-                  className="cursor-pointer w-[40px] h-[26px] mt-[26px] mx-[16px] hover:opacity-80"
+                  className="cursor-pointer w-[40px] h-[26px] mt-[26px] mx-[16px] hover:opacity-80 "
                 />
               </div>
             </div>
@@ -400,7 +390,7 @@ const Home = () => {
         <div className="lg:block hidden">
           <div className="relative overflow-hidden">
             <img
-              src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673334848/Rectangle_90_ocxe6k.png"
+              src="https://dl.kraken.io/web/cf62eb88dd078047146142c5ae716b84/res.cloudinary.com/dpokiomqq/image/upload/v1673334848/Rectangle_90_ocxe6k.png"
               alt="bg img"
             />
             <div className="absolute flex items-center justify-center -bottom-10 opacity-100 place-items-center m-20">
@@ -409,19 +399,19 @@ const Home = () => {
                   See Upcoming Auctions and Exhibitions
                 </p>
                 <img
-                  src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673430562/Arrow_3_jcjlg1.png"
+                  src="https://dl.kraken.io/web/b61e7232bc41ae272de86a1fd41e55fd/res.cloudinary.com/dpokiomqq/image/upload/v1673430562/Arrow_3_jcjlg1.png"
                   alt="arrow"
                 />
                 <div className="relative">
                   <div className="grid items-end justify-end ">
                     <img
-                      src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673044148/monalisa_rizbkl.png"
+                      src="https://dl.kraken.io/web/3f92b0d6f327b73016f733c8d43ffdcf/res.cloudinary.com/dpokiomqq/image/upload/v1673044148/monalisa_rizbkl.png"
                       alt="img bg"
                       className="lg:w-[1200px] lg:h-[446px] h-[269px] object-cover"
                     />
                     <div className=" absolute items-start justify-start place-items-start lg:mx-[72px]">
                       <img
-                        src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673431361/Ellipse_6_a0du0m.png"
+                        src="https://dl.kraken.io/web/70ea97cba0d12b0da9bcf4f42a47e074/res.cloudinary.com/dpokiomqq/image/upload/v1673431361/Ellipse_6_a0du0m.png"
                         alt="circle"
                         className="w-[15.97px] h-[15.97px] mx-[12px]"
                       />
@@ -458,7 +448,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div class="relative block lg:hidden md:hidden">
+      {/* <div class="relative block lg:hidden md:hidden">
         <img
           src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673334848/Rectangle_90_ocxe6k.png"
           alt="Background Image"
@@ -479,7 +469,7 @@ const Home = () => {
             </button>
           </Link>
         </div>
-      </div>
+      </div> */}
 
       {/* marketplace and auction */}
       <div className="mt-[100px]">
@@ -491,7 +481,7 @@ const Home = () => {
           <div className="text-[#292929] lg:hidden md:hidden block">
             <Link to="marketplace">
               <img
-                src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673348986/Group_518_q72wzw.png"
+                src="https://dl.kraken.io/web/87308be5e06c4b12b6f7e7f9bb5259d4/res.cloudinary.com/dpokiomqq/image/upload/v1673348986/Group_518_q72wzw.png"
                 alt="arrow"
                 className=" cursor-pointer w-[53px] h-[53px] mr-[55px] hover:opacity-75"
               />
@@ -516,7 +506,7 @@ const Home = () => {
           <div className="text-[#292929] lg:hidden md:hidden block">
             <Link to="auction">
               <img
-                src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673348986/Group_518_q72wzw.png"
+                src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673336972/Vector_1_kh86lc.png"
                 alt="arrow"
                 className="cursor-pointer  w-[53px] h-[53px] mr-[35px] hover:opacity-75"
               />
