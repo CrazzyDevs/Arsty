@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { dropData } from "./data";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+// import "react-lazy-load-image-component/src/effects/blur.css";
 
 const DropList = () => {
   const [selectedCategory, setSelectedCategory] = useState("");

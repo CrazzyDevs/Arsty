@@ -7,8 +7,8 @@ import { productsArr } from "./data";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const MarketPlace = () => {
   const cartArr = [
