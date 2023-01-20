@@ -22,9 +22,31 @@ const Home = () => {
       </div>
 
       {/* Carosuel */}
-      <Carosuel />
+      <div className="md:block hidden">
+      <div className="flex w-full gap-5 justify-center overflow-hidden " >
 
+      <div className="w-52 shrink " >
+      <Carosuel />
+      </div>
+      <div className="w-52 mt-14 shrink ">
+      <Carosuel />
+      </div>
+      <div className="w-52 shrink ">
+      <Carosuel />
+      </div>
+      <div className="w-52 mt-14 shrink ">
+      <Carosuel />
+      </div>
+      
+      </div>
+      </div>
+      <div className=" md:hidden">
+      <Carosuel />
+      </div>
+  
+    
       {/* cards */}
+
       <div className="mt-[112px] text-[#292929] text-[28px] font-[700] leading-[43.88px]">
         <h2>Featured products</h2>
 
