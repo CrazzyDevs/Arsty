@@ -7,6 +7,9 @@ import { productsArr } from "./data";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const MarketPlace = () => {
   const cartArr = [
     {
@@ -180,23 +183,21 @@ const MarketPlace = () => {
         <div className="w-full md:w-4/5 lg:w-3/4 md:p-3 p-6 md:mt-0 flex justify-between flex-wrap gap-y-10">
           {productsArr.map(({ id, name, price, img }) => {
             return (
-              <Link to={"/marketplace/1"} className="md:w-60 w-full">
+              <Link to={'/marketplace/1'}>
                 <div
-                  className="md:shadow-xl md:p-3 md:rounded-lg cursor-pointer"
-                  key={id}
-                >
-                  <div className="w-full h-96 md:h-60 mb-3 overflow-hidden md:rounded-lg">
-                    <img
-                      src={img}
-                      alt={name}
-                      className="object-cover w-full h-full"
-                    />
-                  </div>
-                  <div className="flex md:block justify-between w-full">
-                    <p className="uppercase mb-3">{name}</p>
-                    <p className="md:font-bold text-lg">${price.toFixed(2)}</p>
-                  </div>
+                className="w-60 shadow-xl p-3 rounded-lg cursor-pointer"
+                key={id}
+              >
+                <div className="w-full h-60 mb-3 overflow-hidden rounded-lg">
+                  <img
+                    src={img}
+                    alt={name}
+                    className="object-cover w-full h-full"
+                  />
                 </div>
+                <p className="uppercase mb-3">{name}</p>
+                <p className="font-bold text-lg">${price.toFixed(2)}</p>
+              </div>
               </Link>
             );
           })}
