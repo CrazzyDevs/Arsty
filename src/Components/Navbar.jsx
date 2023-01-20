@@ -9,7 +9,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="w-[100%] h-[80px] z-10 lg:mt-[52px]">
+    <div className="w-[100%] md:h-[80px] z-10 lg:mt-[52px]">
       <div className="md:px-8 flex place-items-center justify-between items-center mt-[20px]">
         {/* Menubar*/}
         <div className="md:hidden" onClick={handleClick}>

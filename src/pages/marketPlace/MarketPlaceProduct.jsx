@@ -57,28 +57,38 @@ const MarketPlaceProduct = () => {
 
   return (
     <div className="w-full">
-      <div className="flex items-center space-x-2 mt-6">
-        <Link to="/" className="text-fadeLink capitalize ">
+      <div className="flex items-center space-x-1 md:space-x-2 mt-5 md:mt-6 border-b md:border-none border-grey pb-3 md:p-0">
+        <Link to="/" className="text-fadeLink capitalize text-sm md:text-base ">
           home/
         </Link>
-        <Link to="/" className="text-fadeLink capitalize ">
+        <Link to="/" className="text-fadeLink capitalize text-sm md:text-base ">
           marketplace/
         </Link>
-        <Link to="/" className="text-fadeLink capitalize ">
+        <Link to="/" className="text-fadeLink capitalize text-sm md:text-base ">
           editorials/
         </Link>
-        <p className="capitalize text-pureBlack font-semibold">philomena '22</p>
+        <p className="capitalize text-pureBlack font-semibold text-sm md:text-base">
+          philomena '22
+        </p>
       </div>
-      <div className="mt-8 border border-confusedBlack w-full flex h-[600px] ">
-        <div className="w-2/5 border-r border-confusedBlack h-full py-5 px-3 overflow-hidden">
-          <img
-            src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673542628/Rectangle_300_yfrj7f.png"
-            alt="pelomena"
-            className="w-full h-full object-cover"
-          />
+      <div className="md:mt-8 md:border md:border-confusedBlack w-full md:flex md:h-[600px] ">
+        <div className="w-full md:w-2/5 md:border-r md:border-confusedBlack h-full pt-5 md:py-5 px-3 overflow-hidden">
+          <div className="w-full h-[350px] md:h-full">
+            <img
+              src="https://res.cloudinary.com/dpokiomqq/image/upload/v1673542628/Rectangle_300_yfrj7f.png"
+              alt="pelomena"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-full md:hidden flex items-center justify-between py-5">
+            <p className="uppercase text-confusedBlack font-semibold text-sm">
+              philomena '22
+            </p>
+            <p className="text-confusedBlack font-semibold text-sm">$21.00</p>
+          </div>
         </div>
-        <div className="w-3/5 h-full">
-          <div className="border-b border-confusedBlack py-6 px-3 space-x-16 flex items-center">
+        <div className="w-full md:w-3/5 h-full">
+          <div className="border-b border-confusedBlack py-6 px-3 space-x-16 md:flex items-center hidden">
             <h2 className="capitalize text-2xl font-bold">boolean egyptian</h2>
             <p className="space-x-3 flex items-center">
               <SiPrisma className="text-xl text-confusedBlack" />
@@ -87,12 +97,12 @@ const MarketPlaceProduct = () => {
               </span>
             </p>
           </div>
-          <div className="py-8 px-5 space-y-4 border-b border-confusedBlack">
-            <p className="capitalize text-[#616161]">
+          <div className="px-3 md:py-8 md:px-5 space-y-4 md:border-b md:border-confusedBlack">
+            <p className="capitalize text-[#616161] font-semibold md:font-normal">
               creator: <span className="text-[#4693ED]">Ali Dawa</span>
             </p>
             <p className="text-pureBlack">Made in Italy</p>
-            <p className="text-pureBlack font-semibold">
+            <p className="text-pureBlack md:font-semibold">
               Total views: <span className="font-normal">1.7k views</span>
             </p>
             <div className="flex items-center space-x-3">
@@ -109,15 +119,16 @@ const MarketPlaceProduct = () => {
               </button>
             </div>
             <div className="flex space-x-3">
-              <button className="bg-blue text-[white] w-48 h-12 text-center flex items-center justify-center space-x-2">
-                <span>Add to cart</span> <BsArrowRight />
+              <button className="bg-blue text-[white] w-40 md:w-48 h-12 text-center flex items-center justify-center space-x-2 rounded md:rounded-none">
+                <span>Add to cart</span>{" "}
+                <BsArrowRight className="hidden md:block" />
               </button>
-              <button className="border border-confusedBlack w-16 h-12 flex justify-center items-center ">
+              <button className="border border-confusedBlack w-16 h-12 flex justify-center items-center rounded md:rounded-none">
                 <BsHeart className="text-2xl text-confusedBlack " />
               </button>
             </div>
           </div>
-          <div className="flex py-6 px-5 border-b border-confusedBlack capitalize text-confusedBlack justify-between items-center cursor-pointer">
+          <div className="flex py-6 px-5 mt-10 md:mt-0 border-t md:border-t-0 border-b border-confusedBlack capitalize text-confusedBlack justify-between items-center cursor-pointer">
             <p className="text-lg font-semibold">description</p>
             <MdKeyboardArrowDown className="text-2xl" />
           </div>
@@ -125,13 +136,13 @@ const MarketPlaceProduct = () => {
             <p className="text-lg font-semibold">listings</p>
             <MdKeyboardArrowDown className="text-2xl" />
           </div>
-          <div className="flex py-6 px-5 capitalize text-confusedBlack justify-between items-center cursor-pointer">
+          <div className="flex py-6 px-5 capitalize border-b border-confusedBlack md:border-b-0 text-confusedBlack justify-between items-center cursor-pointer">
             <p className="text-lg font-semibold">status</p>
             <MdKeyboardArrowDown className="text-2xl" />
           </div>
         </div>
       </div>
-      <div className="my-16 shadow-3xl py-4 flex items-center justify-between rounded-lg px-4">
+      <div className="my-16 shadow-3xl py-4 hidden md:flex items-center justify-between rounded-lg px-4">
         <p className="text-confusedBlack font-semibold text-lg">
           Explore more of this collection
         </p>
@@ -144,11 +155,11 @@ const MarketPlaceProduct = () => {
           </div>
         </div>
       </div>
-      <div className="explore-carousel">
-        <Carousel
-          responsive={responsive}
-          className="mb-14"
-        >
+      <div className="explore-carousel mt-20 md:mt-0">
+        <p className="md:hidden text-pureBlack py-5 font-semibold text-lg">
+          More from this collection
+        </p>
+        <Carousel responsive={responsive} className="mb-14">
           {exploreArr.map(({ id, name, price, img }) => {
             return (
               <div

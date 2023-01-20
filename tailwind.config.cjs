@@ -12,6 +12,11 @@ module.exports = {
       lightGrey: "#F4F2F2",
       fadeLink: "#BCB7B7",
     },
+    screens: {
+      sm: "320px",
+      md: "600px",
+      lg: "900px",
+    },
     fontFamily: {
       switzer: ["switzer", "sans-serif"],
       serif: ["clash display", "sans-serif"],
