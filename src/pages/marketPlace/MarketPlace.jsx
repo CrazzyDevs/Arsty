@@ -6,6 +6,9 @@ import { BsCheck } from "react-icons/bs";
 import { productsArr } from "./data";
 import { Link } from "react-router-dom";
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const MarketPlace = () => {
   const cartArr = [
     {
@@ -149,21 +152,22 @@ const MarketPlace = () => {
         <div className="w-3/4 p-3 flex justify-between flex-wrap gap-y-10">
           {productsArr.map(({ id, name, price, img }) => {
             return (
-              <Link to={'/marketplace/1'}>
+              <Link to={"/marketplace/1"}>
                 <div
-                className="w-60 shadow-xl p-3 rounded-lg cursor-pointer"
-                key={id}
-              >
-                <div className="w-full h-60 mb-3 overflow-hidden rounded-lg">
-                  <img
-                    src={img}
-                    alt={name}
-                    className="object-cover w-full h-full"
-                  />
+                  className="w-60 shadow-xl p-3 rounded-lg cursor-pointer"
+                  key={id}
+                >
+                  <div className="w-full h-60 mb-3 overflow-hidden rounded-lg">
+                    <LazyLoadImage
+                      src={img}
+                      alt={name}
+                      effect="blur"
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <p className="uppercase mb-3">{name}</p>
+                  <p className="font-bold text-lg">${price.toFixed(2)}</p>
                 </div>
-                <p className="uppercase mb-3">{name}</p>
-                <p className="font-bold text-lg">${price.toFixed(2)}</p>
-              </div>
               </Link>
             );
           })}
