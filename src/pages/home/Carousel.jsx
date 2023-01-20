@@ -8,15 +8,15 @@ function Carosuel() {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 6,
+      items: 1,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3,
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -26,8 +26,8 @@ function Carosuel() {
   };
 
   return (
-    <div>
-      <div className="lg:block md:block hidden pt-12">
+    <div className="">
+      <div className="lg:block md:block  hidden pt-12">
         <Carousel
           partialVisible={true}
           additionalTransfrom={0}
@@ -37,13 +37,11 @@ function Carosuel() {
           centerMode={false}
           className=""
           customTransition="all 1s linear"
-          draggable
           focusOnSelect={false}
           infinite
           itemClass=""
           keyBoardControl
           minimumTouchDrag={80}
-          pauseOnHover
           renderArrowsWhenDisabled={false}
           renderButtonGroupOutside={false}
           renderDotsOutside={false}
@@ -52,9 +50,15 @@ function Carosuel() {
         >
           {auctionProduct.map(({ id, imageUrl }) => {
             return (
-              <div className="pt-12 space-y-8" key={id}>
-                <div className="w-72 h-72 overflow-hidden">
-                  <img src={imageUrl} alt="img" className="w-full h-full" />
+              
+              <div className=" " key={id}>
+                <div className="w-52  h-80  " style={{
+                  backgroundImage: `url(${imageUrl})`,
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center'
+                }}>
+            
                 </div>
               </div>
             );
