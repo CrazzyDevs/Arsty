@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 import { dropData } from "./data";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
-// import "react-lazy-load-image-component/src/effects/blur.css";
+
 
 const DropList = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -38,9 +37,9 @@ const DropList = () => {
           <div key={items.id}>
             <div className="grid lg:grid-cols-2 gap-[42px]">
               <div className="relative">
-                <LazyLoadImage
+                <img
+                  loading="lazy"
                   src={items.img}
-                  effect="blur"
                   className="w-[398px] lg:w-[683px] h-[224px] lg:h-[441px] rounded-[10px] object-cover"
                 />
                 <div className="absolute inset-0 p-5">

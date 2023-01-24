@@ -1,6 +1,39 @@
-import React from "react";
+import { React, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Newsletter = () => {
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (message.length === 0) {
+      toast.error("Please input your email!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    } else {
+      toast.success("Successfully sent!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }
+
+    setMessage("");
+  };
+
   return (
     <div className="lg:border md:border rounded-[#333333] lg:w-full lg:h-[320px] md:h-[300px] mt-[100px]">
       <h3 className="font-[400] lg:text-[30.21px] text-[24px] lg:leading-[39.06px] leading-[31.03px] text-[#333333] lg:mt-[62px] md:mt-[50px] lg:text-center md:text-center uppercase">
@@ -13,10 +46,14 @@ const Newsletter = () => {
         SUBSCRIBE TO OUR DAILY UPDATES AND NEWSLETTERS
       </p>
 
-      <form className="lg:text-center lg:mt-[34px] mt-[25px] md:text-center lg:flex grid gap-6 md:place-items-center md:justify-center">
+      <form
+        className="lg:text-center lg:mt-[34px] mt-[25px] md:text-center lg:flex grid gap-6 md:place-items-center md:justify-center"
+        onSubmit={handleSubmit}
+      >
         <input
-          type="text"
-          required
+          type="email"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           placeholder="ENTER YOUR EMAIL"
           className="w-[340px] lg:w-[446px] h-[46px] lg:h-[60px] border-[#333333] border outline-[#333333] px-4 text-[16px] text-[#333333] font-[400]"
         />
@@ -27,6 +64,7 @@ const Newsletter = () => {
           Subscribe
         </button>
       </form>
+      <ToastContainer limit={2} style={{ width: "300px" }} />
     </div>
   );
 };
